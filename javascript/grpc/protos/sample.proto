@@ -1,0 +1,14 @@
+import "google/protobuf/empty.proto";
+
+syntax="proto3";
+
+package SampleService;
+
+message HelloThere {
+  bool succes=1;
+  string msg=2;
+}
+
+service SampleService {
+  rpc SayHello () returns (HelloThere);
+}
